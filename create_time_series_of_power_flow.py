@@ -27,7 +27,7 @@ for f in glob.glob(folder_name + "/*."+file_type):
 #print(list_of_dfs[0])
 number_of_smart_meters = len(list_of_dfs)
 
-#Make all the dataframes start at the same time, and go for 1000 values after that
+#Make all the dataframes start at the same time, and go for 8660 values after that
 for i in range(len(list_of_dfs)):
     list_of_dfs[i]["date_tz"] = pd.to_datetime(list_of_dfs[i]["date_tz"], utc=True)
     list_of_dfs[i] = list_of_dfs[i].set_index("date_tz")
