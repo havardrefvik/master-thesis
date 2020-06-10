@@ -170,7 +170,8 @@ def evaluate_forecasts(test, forecasts, n_lag, n_seq):
     mape = mean_absolute_percentage_error(actual_list, predicted_list)
     print('Test MAPE: %.3f' % mape)
     print('t+%d RMSE: %f' % ((i + 1), rmse))
-
+    
+    #If want to write the results to file
     """f = open('results.csv', 'a')
 
     with f:
@@ -223,11 +224,6 @@ def mean_absolute_percentage_error(y_true, y_pred):
     return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
 # load dataset
-"""df = pd.read_csv("results_time_series_voltage11kW.csv", names=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
-"""
-
-#df = pd.read_csv("voltage_5000.csv", sep=";")
-
 df = pd.read_csv("new_results_voltage.csv", names=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
                                                   "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"])
 
