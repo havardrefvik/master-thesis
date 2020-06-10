@@ -15,12 +15,6 @@ import pmdarima as pm
 plt.rcParams.update({'figure.figsize':(9,7), 'figure.dpi':120})
 
 # Import data
-"""df = pd.read_csv("results_time_series_voltage11kW.csv", names=["value0", "value1", "value2", "value3", "value4", \
-                                                               "value_9", "value6", "value7", "value8", "value9"])"""
-#df = pd.read_csv("voltage_1000_ID_9.csv", sep=";", parse_dates=["Timestamp"], index_col=["Timestamp"])
-
-#df = pd.read_csv("results_one_year.csv", names=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"])
-
 df = pd.read_csv("new_results_voltage.csv", names=["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
                                                    "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"])
 
